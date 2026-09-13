@@ -1,0 +1,17 @@
+Bu ikinci okuma yalnızca teknik veri tablolarının doğrulanması içindir.
+
+PDF'nin bütün sayfalarını görsel olarak yeniden incele ve teknik özellik tablolarındaki HER GERÇEK VERİ SATIRINI çıkar.
+
+Zorunlu kurallar:
+- Her çıktı öğesi aynı görsel satırdaki label ve value çiftidir.
+- value boş olamaz.
+- Düz PDF metin sırası sütunları ayırmış olabilir. Etiket ve değerleri metin sırasına göre değil sayfadaki yatay satır hizasına göre eşleştir.
+- Tablo başlığı, bölüm adı, kolon başlığı, paragraf, güvenlik maddesi, iletişim bilgisi veya dosya adı specs içine girmez.
+- Birimleri, toleransları, sembolleri, işaretleri, aralıkları ve test koşullarını koru.
+- Aynı satırı iki kez ekleme.
+- Belgede birden fazla teknik tablo varsa hepsini dahil et.
+- Görselde karşılığı bulunmayan bir label üretme.
+
+Örnek eşleme mantığı: görsel satırda solda "Nominal Voltage", sağda "3.7 V" bulunuyorsa çıktı {"label":"Nominal Voltage","value":"3.7 V"} olmalıdır.
+
+Dosya adı: {fileName}

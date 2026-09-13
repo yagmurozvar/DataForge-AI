@@ -1,0 +1,69 @@
+[ {
+  "id" : "41fea099-1f8a-40d3-b8b7-a1cde9b0a5aa",
+  "code" : "100.012.0300.101",
+  "title" : "ORION 18650/22 2200mAh 5C (11A) Lithium Ion Cell",
+  "category" : "Lithium Ion Cell",
+  "description" : "The ORION 18650/22 is a popular lithium-ion cell intended for use in high capacity, high voltage 18650 battery packs. It features a nominal capacity of 2200mAh, a nominal voltage of 3.7V, and a maximum pulse discharge current of 11A (5C), making it suitable for a wide range of devices such as electric buffers, smart video doorbells, and fiber optic testers.",
+  "specs" : [ {
+    "label" : "Cell Dimensions",
+    "value" : "18.5x65mm",
+    "empty" : false
+  }, {
+    "label" : "Cell Weight",
+    "value" : "45.5g",
+    "empty" : false
+  }, {
+    "label" : "Cell Capacity (nominal/minimum) (0.5C Rate)",
+    "value" : "2200mAh",
+    "empty" : false
+  }, {
+    "label" : "Voltage (nominal)",
+    "value" : "3.7V",
+    "empty" : false
+  }, {
+    "label" : "Internal Resistance (23 ± 2°C)",
+    "value" : "<35mΩ",
+    "empty" : false
+  }, {
+    "label" : "Energy Density",
+    "value" : "8.14Wh",
+    "empty" : false
+  }, {
+    "label" : "Recommended Standard Charge Method",
+    "value" : "440mA, 4.2V CC-CV",
+    "empty" : false
+  }, {
+    "label" : "Maximum Charge Method",
+    "value" : "2200mA, 4.2V CC-CV",
+    "empty" : false
+  }, {
+    "label" : "Maximum Continuous Discharge",
+    "value" : "6600mA – 3C",
+    "empty" : false
+  }, {
+    "label" : "Maximum Pulse Discharge",
+    "value" : "11000mA – 5C",
+    "empty" : false
+  }, {
+    "label" : "Discharge Cut-off Voltage",
+    "value" : "3.00V",
+    "empty" : false
+  }, {
+    "label" : "Cycle Life",
+    "value" : "1000 cycles",
+    "empty" : false
+  }, {
+    "label" : "Operating Temperature",
+    "value" : "-20°C to 60°C",
+    "empty" : false
+  }, {
+    "label" : "Storage Temperature",
+    "value" : "0°C to 35°C",
+    "empty" : false
+  } ],
+  "safety" : [ "The cell must stay in the operating temperatures outlined in its data sheet", "The cell must not exceed voltage, current, and other ratings in its data sheet", "Store batteries separately, and do not transport without proper packaging", "Never store or transport together with conductive or metallic objects particularly in a pocket or bag", "Do not keep in the sun, in a hot car, or anywhere with direct heat", "If the cell is attached to a PCB, keep it away from high-static environments", "Recycle discontinued batteries according to local regulations and cover terminals with insulating tape before disposal", "Discharge end or cut-off voltage in data sheet is lower-limit for discharge cycle and should not be exceeded", "Charger or device should implement warning for over-voltage, over current, and over-temperature, control of overcharge, and charge timer", "Be careful not to short-circuit" ],
+  "notes" : "",
+  "image" : "",
+  "sourcePath" : "100.012.0300.101.pdf",
+  "valid" : true
+} ]

@@ -1,0 +1,175 @@
+{
+  "app": {
+    "title": "Pilsan Datasheet",
+    "fatalHeader": "Uygulama başlatılamadı",
+    "fatalUnexpected": "Beklenmeyen bir hata oluştu."
+  },
+  "toolbar": {
+    "search": "Ara",
+    "searchPlaceholder": "Datasheet ara",
+    "clear": "Temizle",
+    "add": "Ekle",
+    "assistant": "Asistan",
+    "settings": "Ayarlar"
+  },
+  "addMenu": {
+    "manual": "Manuel Ekle",
+    "upload": "Datasheet Yükle"
+  },
+  "settings": {
+    "darkMode": "Karanlık Mod",
+    "alwaysOnTop": "Her Zaman Üstte",
+    "quit": "Uygulamadan Çık",
+    "themeSaved": "Tema kaydedildi.",
+    "themeSaveFailed": "Tema tercihi kaydedilemedi.",
+    "windowSaved": "Pencere tercihi kaydedildi.",
+    "windowSaveFailed": "Pencere tercihi kaydedilemedi."
+  },
+  "assistant": {
+    "title": "Katalog Asistanı",
+    "subtitle": "Ürün ve datasheet verilerini sorabilirsiniz",
+    "placeholder": "Mesajınızı yazın",
+    "send": "Gönder",
+    "greeting": "Merhaba. Katalogda {count} kayıt var. Ürünler, teknik özellikler ve datasheet verileri hakkında soru sorabilirsiniz.",
+    "thinking": "Yanıt hazırlanıyor…",
+    "unavailable": "Katalog asistanına şu anda ulaşılamıyor.",
+    "refusal": "Yalnızca katalogdaki ürünler ve datasheetler hakkında yardımcı olabilirim.",
+    "noData": "Bu soruyu yanıtlamak için katalogda yeterli veri bulunmuyor.",
+    "emptyCatalog": "Katalogda henüz ürün bulunmuyor. Önce bir datasheet yükleyin.",
+    "busy": "Önceki asistan yanıtı hazırlanıyor.",
+    "invalidResponse": "Asistan geçerli bir yanıt üretemedi."
+  },
+  "common": {
+    "close": "Kapat",
+    "datasheet": "Datasheet",
+    "save": "Kaydet",
+    "cancel": "Vazgeç"
+  },
+  "editor": {
+    "newTitle": "Yeni Datasheet",
+    "editTitle": "Datasheet Düzenle",
+    "subtitle": "Alanları doldurup kaydedin",
+    "code": "Ürün Kodu",
+    "category": "Kategori",
+    "title": "Başlık",
+    "description": "Açıklama",
+    "specs": "Teknik Veriler",
+    "specsHint": "her satıra \"Etiket: Değer\"",
+    "safety": "Güvenlik Notları",
+    "safetyHint": "her satıra bir madde"
+  },
+  "sheet": {
+    "notes": "Notlar",
+    "notesPlaceholder": "Bu datasheet için notlarınız",
+    "notesHint": "Notlar otomatik kaydedilir.",
+    "edit": "Düzenle",
+    "export": "PDF olarak yazdır",
+    "delete": "Sil",
+    "close": "Kapat",
+    "brand": "PILSAN",
+    "brandSuffix": "Elektronik",
+    "safety": "Safety",
+    "technicalData": "Technic Data",
+    "phone": "Telefon",
+    "email": "E-posta",
+    "address": "Adres"
+  },
+  "contact": {
+    "phone": "+90 212 320 99 84",
+    "mail": "info@pilsanelektronik.com",
+    "site": "www.pilsanelektronik.com",
+    "address": "Pilsan Plaza, Esenkent Mah. Erzincan Cd. No: 22, 34776 Dudullu OSB / Ümraniye / İstanbul"
+  },
+  "search": {
+    "empty": "Eşleşen datasheet bulunamadı."
+  },
+  "record": {
+    "notFound": "Kayıt bulunamadı.",
+    "openFailed": "Kayıt açılamadı.",
+    "requiredCodeOrTitle": "Kod veya başlık alanlarından biri zorunludur.",
+    "saved": "Kayıt kaydedildi.",
+    "saveFailed": "Kayıt kaydedilemedi. Veri biçimini ve dosya izinlerini kontrol edin.",
+    "deleted": "Kayıt silindi.",
+    "deleteFailed": "Kayıt silinemedi.",
+    "deleteConfirm": "Kaydı silmek için silme simgesine tekrar tıklayın.",
+    "notesSaved": "Notlar kaydedildi.",
+    "notesSaveFailed": "Notlar kaydedilemedi."
+  },
+  "import": {
+    "busy": "Başka bir datasheet analizi devam ediyor.",
+    "fileChooserTitle": "Datasheet PDF seç",
+    "fileChooserFilter": "PDF dosyası",
+    "analyzing": "Analiz ediliyor…",
+    "failed": "Datasheet analiz edilemedi.",
+    "updated": "Mevcut datasheet güncellendi.",
+    "added": "Datasheet kütüphaneye eklendi.",
+    "notDatasheet": "Seçilen PDF geçerli bir ürün datasheeti olarak doğrulanamadı.",
+    "technicalDataFailed": "Teknik veri tablosundaki değerler okunamadı. Kayıt kütüphaneye eklenmedi.",
+    "identityFailed": "PDF analiz edildi ancak ürün kodu veya başlık belirlenemedi.",
+    "processingTimeout": "PDF analiz servisi tarafından hazırlanırken zaman aşımına uğradı.",
+    "processingInterrupted": "PDF hazırlama işlemi kesintiye uğradı.",
+    "processingFailed": "PDF analiz servisi tarafından işlenemedi. Durum: {state}",
+    "uploadInfoMissing": "Analiz servisi yüklenen PDF için geçerli dosya bilgisi döndürmedi.",
+    "analysisInterrupted": "Datasheet analizi kesintiye uğradı.",
+    "analysisTimeout": "Analiz servisi zaman aşımına uğradı. İstek iki kez denendi.",
+    "phaseTimeout": "{phase} zaman aşımına uğradı.",
+    "phaseInterrupted": "{phase} kesintiye uğradı.",
+    "fileMissing": "Seçilen PDF dosyası bulunamadı.",
+    "pdfOnly": "Yalnızca PDF dosyaları yüklenebilir.",
+    "fileEmpty": "PDF dosyası boş.",
+    "fileTooLarge": "PDF dosyası 50 MB sınırını aşıyor.",
+    "modelOutputMissing": "Analiz yanıtında model çıktısı bulunamadı.",
+    "structuredOutputMissing": "Analiz servisi geçerli bir yapılandırılmış sonuç döndürmedi.",
+    "authFailed": "Analiz servisi kimlik doğrulaması başarısız oldu.",
+    "rateLimited": "Analiz servisi kullanım kotası veya hız sınırı aşıldı.",
+    "apiError": "Analiz servisi hatası: {message}",
+    "requestFailed": "Analiz isteği başarısız oldu. HTTP {status}."
+  },
+  "pdf": {
+    "preparing": "PDF hazırlanıyor…",
+    "emptyContent": "Dışa aktarılacak içerik bulunamadı.",
+    "alreadyRunning": "Önceki dışa aktarma işlemi hâlâ devam ediyor.",
+    "contentFailed": "Yazdırma içeriği hazırlanamadı.",
+    "printerMissing": "Windows üzerinde kullanılabilir bir yazıcı bulunamadı.",
+    "jobFailed": "Windows yazdırma işlemi başlatılamadı.",
+    "cancelled": "Dışa aktarma iptal edildi.",
+    "queueFailed": "Belge yazdırma kuyruğuna gönderilemedi.",
+    "exportFailed": "Belge dışa aktarılamadı.",
+    "pdfCompleted": "PDF yazdırma işlemi tamamlandı.",
+    "sentToPrinter": "Belge “{printer}” yazıcısına gönderildi.",
+    "styleMissing": "Yazdırma stili bulunamadı: {resource}",
+    "styleReadFailed": "Yazdırma stili okunamadı."
+  },
+  "tray": {
+    "toggle": "Widget'ı Göster / Gizle",
+    "exit": "Çıkış",
+    "unsupported": "Windows sistem tepsisi bu ortamda kullanılamıyor.",
+    "createFailed": "Sistem tepsisi simgesi oluşturulamadı.",
+    "iconMissing": "Sistem tepsisi simgesi bulunamadı: {resource}",
+    "iconReadFailed": "Sistem tepsisi simgesi okunamadı."
+  },
+  "window": {
+    "resourceMissing": "Arayüz kaynağı bulunamadı: {resource}"
+  },
+  "storage": {
+    "directoryMissing": "Hedef dizin belirlenemedi: {target}",
+    "dataDirectoryFailed": "Uygulama veri dizini oluşturulamadı.",
+    "dataDirectoryUnknown": "Uygulama veri dizini belirlenemedi.",
+    "catalogSeedFailed": "Başlangıç kataloğu oluşturulamadı.",
+    "catalogRecoveryFailed": "Katalog kurtarılamadı."
+  },
+  "launcher": {
+    "setupPreparing": "İlk kurulum hazırlanıyor.",
+    "setupLog": "Kurulum kaydı: {log}",
+    "jdkDownloading": "[1/2] Eclipse Temurin JDK 21 indiriliyor...",
+    "jdkReady": "JDK 21 hazır.",
+    "mavenDownloading": "[2/2] Apache Maven {version} indiriliyor...",
+    "mavenReady": "Maven {version} hazır.",
+    "environmentReady": "Çalışma ortamı hazırlandı. Uygulama başlatılıyor...",
+    "setupFailed": "Kurulum tamamlanamadı.",
+    "details": "Ayrıntılı hata kaydı:",
+    "sendLog": "Bu dosyayı paylaşarak hangi adımın hata verdiğini kontrol edebilirsiniz.",
+    "setupErrorDialog": "Gerekli çalışma ortamı hazırlanamadı. Ayrıntılar proje klasöründeki tarihli log dosyasına yazıldı.",
+    "runErrorDialog": "Uygulama başlatılamadı. Ayrıntılar: {log}"
+  }
+}

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="tr" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="root" data-drag>
+    <div id="bar" class="bar">
+        <span class="grip" id="grip" aria-hidden="true"></span>
+        <button type="button" id="search-toggle" class="icon-button" data-no-drag data-i18n-title="toolbar.search" data-i18n-aria="toolbar.search"></button>
+
+        <div class="search-field">
+            <input type="text" id="search-input" autocomplete="off" spellcheck="false" data-i18n-placeholder="toolbar.searchPlaceholder" data-no-drag>
+            <button type="button" id="search-clear" class="icon-button subtle is-hidden" data-no-drag data-i18n-title="toolbar.clear" data-i18n-aria="toolbar.clear"></button>
+        </div>
+
+        <span class="separator"></span>
+
+        <button type="button" id="add-toggle" class="icon-button" data-no-drag data-i18n-title="toolbar.add" data-i18n-aria="toolbar.add"></button>
+        <button type="button" id="assistant-toggle" class="icon-button" data-no-drag data-i18n-title="toolbar.assistant" data-i18n-aria="toolbar.assistant"></button>
+        <button type="button" id="settings-toggle" class="icon-button" data-no-drag data-i18n-title="toolbar.settings" data-i18n-aria="toolbar.settings"></button>
+    </div>
+
+    <div id="results" class="panel panel-results is-hidden" data-no-drag></div>
+
+    <div id="add-menu" class="panel panel-menu is-hidden" data-no-drag>
+        <button type="button" class="menu-item" data-action="manual-add">
+            <span data-i18n="addMenu.manual"></span>
+        </button>
+        <button type="button" class="menu-item" data-action="upload-datasheet">
+            <span data-i18n="addMenu.upload"></span>
+        </button>
+        <button type="button" class="menu-item" data-action="upload-folder">
+            <span>Klasör Yükle (Toplu)</span>
+        </button>
+        <button type="button" id="retry-orphans" class="menu-item is-hidden" data-action="retry-orphans">
+            <span>Eksik Kayıtları Tamamla</span>
+        </button>
+    </div>
+
+    <div id="settings-menu" class="panel panel-menu align-right is-hidden" data-no-drag>
+        <label class="menu-item switch-row">
+            <span data-i18n="settings.darkMode"></span>
+            <input type="checkbox" id="theme-switch" class="switch">
+        </label>
+        <label class="menu-item switch-row">
+            <span data-i18n="settings.alwaysOnTop"></span>
+            <input type="checkbox" id="pin-switch" class="switch">
+        </label>
+        <span class="menu-divider"></span>
+        <button type="button" class="menu-item danger" data-action="quit">
+            <span data-i18n="settings.quit"></span>
+        </button>
+    </div>
+
+    <div id="assistant" class="panel panel-assistant is-hidden" data-no-drag>
+        <header class="panel-head">
+            <div>
+                <h2 data-i18n="assistant.title"></h2>
+                <p data-i18n="assistant.subtitle"></p>
+            </div>
+            <button type="button" class="icon-button subtle" data-action="close-assistant" data-i18n-title="common.close" data-i18n-aria="common.close"></button>
+        </header>
+        <div id="assistant-log" class="assistant-log"></div>
+        <footer class="assistant-input">
+            <textarea id="assistant-text" rows="1" data-i18n-placeholder="assistant.placeholder"></textarea>
+            <button type="button" id="assistant-send" class="icon-button accent" data-i18n-title="assistant.send" data-i18n-aria="assistant.send"></button>
+        </footer>
+    </div>
+
+    <div id="editor" class="panel panel-editor is-hidden" data-no-drag>
+        <header class="panel-head">
+            <div>
+                <h2 id="editor-title"></h2>
+                <p data-i18n="editor.subtitle"></p>
+            </div>
+            <button type="button" class="icon-button subtle" data-action="close-editor" data-i18n-title="common.close" data-i18n-aria="common.close"></button>
+        </header>
+
+        <div class="editor-body">
+            <div class="field-row">
+                <label class="field">
+                    <span data-i18n="editor.code"></span>
+                    <input type="text" id="editor-code" autocomplete="off">
+                </label>
+                <label class="field">
+                    <span data-i18n="editor.category"></span>
+                    <input type="text" id="editor-category" autocomplete="off">
+                </label>
+            </div>
+
+            <label class="field">
+                <span data-i18n="editor.title"></span>
+                <input type="text" id="editor-title-input" autocomplete="off">
+            </label>
+
+            <label class="field">
+                <span>Ürün Görseli (İsteğe Bağlı)</span>
+                <input type="file" id="editor-image-file" accept="image/png, image/jpeg, image/webp" style="margin-top: 5px;">
+                <input type="hidden" id="editor-image-base64">
+                <div style="margin-top: 10px;">
+                    <img id="editor-image-preview" src="" style="max-width: 100%; max-height: 200px; display: none; border-radius: 4px; border: 1px solid #ddd; object-fit: contain;">
+                </div>
+                <button type="button" id="editor-image-clear" class="button ghost is-hidden" style="margin-top: 5px; padding: 4px 8px; font-size: 12px;">Görseli Kaldır</button>
+            </label>
+
+            <label class="field">
+                <span data-i18n="editor.description"></span>
+                <textarea id="editor-description" rows="3"></textarea>
+            </label>
+
+            <label class="field">
+                <span><span data-i18n="editor.specs"></span> <em data-i18n="editor.specsHint"></em></span>
+                <textarea id="editor-specs" rows="4" spellcheck="false"></textarea>
+            </label>
+
+            <label class="field">
+                <span><span data-i18n="editor.safety"></span> <em data-i18n="editor.safetyHint"></em></span>
+                <textarea id="editor-safety" rows="3"></textarea>
+            </label>
+        </div>
+
+        <footer class="editor-actions">
+            <button type="button" class="button ghost" data-action="close-editor" data-i18n="common.cancel"></button>
+            <button type="button" class="button primary" data-action="save-datasheet" data-i18n="common.save"></button>
+        </footer>
+    </div>
+
+    <section id="sheet" class="panel panel-sheet is-hidden" data-no-drag role="dialog" aria-modal="false" aria-labelledby="sheet-title">
+        <header class="sheet-header">
+            <h2 id="sheet-title"></h2>
+            <div class="sheet-tools">
+                <button type="button" class="icon-button subtle" data-action="open-original" title="Orijinal Dosyayı Aç"></button>
+                <button type="button" class="icon-button subtle" data-action="toggle-notes" data-i18n-title="sheet.notes" data-i18n-aria="sheet.notes"></button>
+                <button type="button" class="icon-button subtle" data-action="edit-sheet" data-i18n-title="sheet.edit" data-i18n-aria="sheet.edit"></button>
+                <button type="button" class="icon-button subtle" data-action="export-pdf" data-i18n-title="sheet.export" data-i18n-aria="sheet.export"></button>
+                <button type="button" class="icon-button subtle danger" data-action="delete-sheet" data-i18n-title="sheet.delete" data-i18n-aria="sheet.delete"></button>
+                <span class="menu-divider vertical"></span>
+                <button type="button" class="icon-button subtle" data-action="close-sheet" data-i18n-title="sheet.close" data-i18n-aria="sheet.close"></button>
+            </div>
+        </header>
+
+        <div class="sheet-content">
+            <div id="sheet-body" class="sheet-body"></div>
+            <aside id="sheet-notes" class="sheet-notes is-hidden">
+                <h3 data-i18n="sheet.notes"></h3>
+                <textarea id="sheet-notes-input" data-i18n-placeholder="sheet.notesPlaceholder"></textarea>
+                <p class="hint" data-i18n="sheet.notesHint"></p>
+            </aside>
+        </div>
+    </section>
+
+    <div id="toast" class="toast is-hidden" data-no-drag></div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

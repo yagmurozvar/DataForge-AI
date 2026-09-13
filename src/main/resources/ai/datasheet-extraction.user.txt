@@ -1,0 +1,26 @@
+Yüklenen PDF dosyasının veya görselin tamamını (metin katmanları, tablolar, şemalar ve grafikler dahil) eksiksiz olarak incele. Asıl olarak sayfaların görsel düzenini, tabloları, hücreleri, grafik ve şemaları (örneğin tipik deşarj profilleri, sıcaklık performans eğrileri, kapasite kayıpları), görsel etiketleri ve dipnotları derinlemesine değerlendir.
+
+Grafik ve Görsel Yorumlama Kuralları:
+- Belgede yer alan performans grafiklerindeki (örn. "Typical Discharge Profiles", "Voltage Plateau Versus Current") eğrileri, çalışma sıcaklığı aralıklarını ve yük koşullarını analiz et. Bu grafiklerden elde edilen önemli teknik eşikleri (örneğin belirli akım değerlerindeki voltaj düşüşleri veya sıcaklık davranışları) description veya specs alanına anlamlı teknik maddeler olarak ekle.
+
+Web Üzerinden Eksik Veri Tamamlama Kuralları:
+- Belgede eksik olduğu tespit edilen kritik teknik parametreler (standart ağırlık, kesin kapasite toleransları, standart cut-off voltajları vb.) varsa, bunları web üzerinde araştırarak bul ve yapılandırılmış datasheete dahil et.
+
+ÖNEMLİ ÇEVİRİ KURALI:
+- Belgedeki orijinal dil ne olursa olsun, çıkarılan tüm verileri, metinleri, başlıkları, açıklamaları ve teknik değerleri KESİNLİKLE İNGİLİZCEYE (English) çevirerek oluştur[cite: 6]. Ürün kodları, ölçü birimleri (V, mAh, mm vb.) ve özel markalar hariç her şey İngilizce'ye çevrilmeli[cite: 6].
+
+Teknik tablo ve grafik okuma kuralları:
+- Her gerçek veri satırında sol/etiket hücresini aynı satırdaki değer hücresiyle eşleştir (etiketleri ve değerleri İngilizceye çevir)[cite: 6].
+- Tablo başlıklarını, bölüm adlarını ve kolon başlıklarını teknik parametre satırı olarak ekleme[cite: 6].
+- Çok satırlı hücreleri veya grafik bulgularını tek bir anlamlı value metninde birleştir.
+- technicalTableRowCount alanına tüm teknik tablolardan ve grafik analizlerinden elde edilen toplam parametre sayısını yaz.
+- specs dizisi bu parametrelerin tamamını label ve value çiftleri halinde içersin[cite: 6].
+
+Genel kurallar:
+- valid yalnızca belge gerçek bir ürün veya komponent teknik datasheeti ise true olsun[cite: 6].
+- code alanına model, ürün kodu, part number veya en belirgin ürün tanımlayıcısını yaz[cite: 6].
+- title alanına ürünün İngilizceye çevrilmiş açık adını yaz[cite: 6].
+- category alanına yalnızca belgeden güvenle anlaşılabilen kısa ürün kategorisini İngilizce olarak yaz[cite: 6].
+- description alanına ürünün amacını, temel karakteristiğini ve grafiklerden elde edilen performans özetini İngilizce olarak kısa ve nesnel biçimde özetle[cite: 6].
+- safety dizisine belgede bulunan güvenlik, uyarı, kullanım kısıtı veya depolama ifadelerini İngilizceye çevirerek aktar[cite: 6].
+Dosya adı: {fileName}[cite: 6]
